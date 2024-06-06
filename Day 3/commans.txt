@@ -1,0 +1,12 @@
+git config --global user.name "Your Name"
+git config --global user.email "your email"
+
+git init # initialize a git repository
+
+git add . # add all files to the staging area
+
+git commit -m "Initial commit" # commit the changes
+
+git status # check the status of the repository
+
+git checkout # switch branches or restore working tree files
