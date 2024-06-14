@@ -1,9 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <title>Flex Box in CSS</title>
+        <style>
+            /* Disply : Inline, Block, Flex */
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .box {
+                background-color: gold;
+                margin: 7px;
+                height: 100px;
+                width: 100px;
+            }
+            .container{
+                display: flex; 
+                border: 2px solid black;
+                margin: 13px;
+                /* justify-content: center; */
+                /* align-items: center;  */
+                /* use align-items when you are working with single row*/
+                /* align-content: center; */
+                /* use align-content when you are working with multipal rows*/
+
+                height: 500px;
+                flex-wrap: wrap;
+
+                /* flex-direction: row;  Default */
+                flex-direction: row-reverse;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box box1">This is box 1</div>
+            <div class="box box2">This is box 2</div>
+            <div class="box box3">This is box 3</div>
+            <div class="box box4">This is box 4</div>
+            <div class="box box5">This is box 5</div>
+            <div class="box box6">This is box 6</div>
+            <div class="box box7">This is box 7</div>
+            
+        </div>
+    </body>
 </html>
