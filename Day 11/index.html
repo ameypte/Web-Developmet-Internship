@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            }
+            body {
+                background-color: rgb(218, 236, 253);
+            }
+
+            form {
+                background-color: white;
+                border: 1px solid black;
+                margin-top: 70px;
+                margin-left: 250px;
+                margin-right: 250px;
+                padding: 20px;
+                border-radius: 8px;
+            }
+
+            #pass {
+                margin-top: 10px;
+            }
+
+            .btn {
+                width: 100%;
+                background-color: rgb(48, 205, 48);
+                padding: 2px;
+                border-radius: 4px;
+                margin-top: 10px;
+                border: 1.5px solid rgb(25, 110, 25);
+            }
+
+            .btn:hover {
+                background-color: rgb(48, 187, 48);
+                cursor: pointer;
+            }
+
+            .field {
+                width: 100%;
+                margin-top: 4px;
+                padding: 2px;
+            }
+
+            .title {
+                text-align: center;
+                margin-bottom: 8px;
+                font-weight: 500;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>This is h3</h3>
+        <script>
+            document.write(` <form action="#" class="box">
+            <h2 class="title">Login Form</h2>
+            <div class="inp" id="user">
+                <p>Username</p>
+                <input type="text" placeholder="Your username" class="field"/>
+            </div>
+
+            <div class="inp" id="pass">
+                <p>Password</p>
+                <input type="password" placeholder="Your Password" class="field" />
+            </div>
+
+            <input type="submit" value="Login" class="btn"/>
+        </form>`);
+        </script>
+    </body>
+</html>
