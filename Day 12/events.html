@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Events in Java Script</title>
+    <style>
+        .btn {
+            width: 120px;
+            background-color: rgb(71, 177, 71);
+            padding: 8px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 2px;
+            color: white;
+            border: 2px solid rgb(38, 81, 38);
+        }
+
+        .btn:hover {
+            cursor: pointer;
+            background-color: rgb(59, 147, 59);
+        }
+
+        #myPara{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn" onclick="myFunc()" id="myBtn">Click me</div>
+    <p id="myPara" onmouseenter="changeBg()" onmouseleave="removeBg()">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut similique accusamus numquam, praesentium
+        voluptatem eos iure cum ducimus at, et molestias ipsum aspernatur!</p>
+    <div class="btn" onclick="toggle()" id="myBtn2">Hide</div>
+
+    <script>
+        function myFunc() {
+            alert("You clicked on a button!");
+            let myBtn = document.getElementById("myBtn");
+            console.log(myBtn.innerHTML);
+
+            myBtn.innerHTML = "You clicked on me!";
+
+            myBtn.style.backgroundColor = "red";
+        }
+
+        function toggle() {
+            let para = document.getElementById("myPara");
+            let btn = document.getElementById("myBtn2");
+
+            if (para.style.display == "none") {
+                para.style.display = "block";
+                btn.innerHTML = "Hide";
+            } else {
+                para.style.display = "none";
+                btn.innerHTML = "Show";
+            }
+        }
+
+        function changeBg(){
+            let para = document.getElementById("myPara");
+            para.style.backgroundColor = "cyan";
+            para.innerHTML = "dskjfh";
+        }
+
+        function removeBg(){
+            let para = document.getElementById("myPara");
+            para.style.backgroundColor = "green";
+        }
+    </script>
+</body>
+
+</html>
