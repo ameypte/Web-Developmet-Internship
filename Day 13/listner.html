@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p class="container" id="para">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, ipsum modi ex quis assumenda eum, rem consequatur vitae, deleniti commodi repellendus vero et iusto unde voluptatibus? Cum, asperiores fuga. Explicabo!
+    </p>
+
+    <script>
+        let p = document.getElementById("para");
+        
+        function myFunc(){
+            p.style.backgroundColor = "red";
+        }
+
+        // By using litneres
+
+        p.addEventListener("click",myFunc);
+
+    </script>
+</body>
+</html>
