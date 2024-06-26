@@ -1,18 +1,22 @@
 let display = document.getElementById("dis");
 
-function append(input){
+function append(input) {
     display.innerHTML = display.innerHTML + input;
 }
 
-function clearDisplay(){
+function clearDisplay() {
     display.innerHTML = "";
 }
 
-function calculate(){
-    display.innerHTML = eval(display.innerHTML);
+function calculate() {
+    try {
+        display.innerHTML = eval(display.innerHTML);
+    } catch (error) {
+        display.innerHTML = "Error";
+    }
 }
 
-function del(){
-    display.innerHTML = display.innerHTML.slice(0,-1);
+function del() {
+    display.innerHTML = display.innerHTML.slice(0, -1);
     // slice , substring, split 
 }
