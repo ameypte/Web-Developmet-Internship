@@ -11,7 +11,7 @@
             crossorigin="anonymous"
         />
     </head>
-    <body class=" bg-body-secondary">
+    <body class="bg-body-secondary" >
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -59,76 +59,93 @@
         >
             <div class="d-flex justify-content-between">
                 <h4>My To Do List</h4>
-                <button type="button" class="btn btn-success">+ Add</button>
+                <button type="button" class="btn btn-success" onclick="add()">
+                    + Add
+                </button>
             </div>
             <hr />
-            <div class="bg-light-subtle p-3 rounded rounded-1 mb-2">
-                <div class="d-flex justify-content-between">
-                    <h5>#Task 1</h5>
-                    <div>
-                        <button type="button" class="btn btn-primary btn-sm">
-                            Edit
-                        </button>
-                        <button type="button" class="btn btn-danger btn-sm">
-                            Delete
-                        </button>
+            <div class="tasks" id="taskList">
+                <p>No tasks are added!</p>
+                <!-- <div class="bg-light-subtle p-3 rounded rounded-1 mb-2">
+                    <div class="d-flex justify-content-between">
+                        <h5>#Task 1</h5>
+                        <div>
+                            <button
+                                type="button"
+                                class="btn btn-primary btn-sm"
+                            >
+                                Edit
+                            </button>
+                            <button type="button" class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </div>
                     </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Totam, accusantium.
+                    </p>
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Totam, accusantium.
-                </p>
-            </div>
-            <div class="bg-light-subtle p-3 rounded rounded-1 mb-2">
-                <div class="d-flex justify-content-between">
-                    <h5>#Task 2</h5>
-                    <div>
-                        <button type="button" class="btn btn-primary btn-sm">
-                            Edit
-                        </button>
-                        <button type="button" class="btn btn-danger btn-sm">
-                            Delete
-                        </button>
+                <div class="bg-light-subtle p-3 rounded rounded-1 mb-2">
+                    <div class="d-flex justify-content-between">
+                        <h5>#Task 2</h5>
+                        <div>
+                            <button
+                                type="button"
+                                class="btn btn-primary btn-sm"
+                            >
+                                Edit
+                            </button>
+                            <button type="button" class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </div>
                     </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Totam,
+                    </p>
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Totam,
-                </p>
-            </div>
-            <div class="bg-light-subtle p-3 rounded rounded-1 mb-2">
-                <div class="d-flex justify-content-between">
-                    <h5>#Task 3</h5>
-                    <div>
-                        <button type="button" class="btn btn-primary btn-sm">
-                            Edit
-                        </button>
-                        <button type="button" class="btn btn-danger btn-sm">
-                            Delete
-                        </button>
+                <div class="bg-light-subtle p-3 rounded rounded-1 mb-2">
+                    <div class="d-flex justify-content-between">
+                        <h5>#Task 3</h5>
+                        <div>
+                            <button
+                                type="button"
+                                class="btn btn-primary btn-sm"
+                            >
+                                Edit
+                            </button>
+                            <button type="button" class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </div>
                     </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Totam, accusantium.
+                    </p>
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Totam, accusantium.
-                </p>
-            </div>
-            <div class="bg-light-subtle p-3 rounded rounded-1 mb-2">
-                <div class="d-flex justify-content-between">
-                    <h5>#Task 4</h5>
-                    <div>
-                        <button type="button" class="btn btn-primary btn-sm">
-                            Edit
-                        </button>
-                        <button type="button" class="btn btn-danger btn-sm">
-                            Delete
-                        </button>
+                <div class="bg-light-subtle p-3 rounded rounded-1 mb-2">
+                    <div class="d-flex justify-content-between">
+                        <h5>#Task 4</h5>
+                        <div>
+                            <button
+                                type="button"
+                                class="btn btn-primary btn-sm"
+                            >
+                                Edit
+                            </button>
+                            <button type="button" class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Totam, accusantium.
-                </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Totam, accusantium.
+                    </p>
+                </div> -->
             </div>
         </main>
         <script
@@ -136,5 +153,6 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"
         ></script>
+        <script src="./script.js"></script>
     </body>
 </html>
