@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cookies in Java Script</title>
+</head>
+<body>
+    <h1>Cookies In JS</h1>
+    <script>
+        // console.log(document.cookie);
+        // this is how we can set cookies in JS
+        // document.cookie = "name=Vishal";
+
+        // the maximum size of a cookie is 4kb
+        // you can create multiple cookies by separating them with a semicolon
+
+        // document.cookie = "age=20;";
+        // console.log(document.cookie);
+        // document.cookie = "city=Delhi;";
+        // console.log(document.cookie);
+
+        // document.cookie = "name=Vishal; city=Delhi; age=20"; // This is not the correct way to set cookies
+        // document.cookie = "name=Vishal;"
+        // document.cookie = "city=Delhi;"
+        // document.cookie = "age=20;"
+        // console.log(document.cookie);
+
+        // document.cookie = "name=Vishal; expires=Sun, 30 Jun 2024 00:00:00 UTC; path=/;";
+
+
+        // create a cookie with expiry of 2 minutes later
+        let date = new Date();
+        date.setTime(date.getTime() + (2*60*1000));
+        document.cookie = "name=Vishal; expires=" + date.toUTCString() + "; path=/;";
+
+        
+    </script>
+</body>
+</html>
