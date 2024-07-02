@@ -1,0 +1,8 @@
+{
+    "product" : "Laptop",
+    "porducts" :["cup","pen", "laptop"],
+    "myobj":{
+        "name":"John",
+        "age":30
+    }
+}
