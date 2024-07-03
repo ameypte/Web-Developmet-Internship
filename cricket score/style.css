@@ -5,8 +5,8 @@ body{
     height: 100vh;
 }
 .overitem{
-    width: 35px;
-    height: 35px;
+    min-width: 40px;
+    padding: 4px;
     font-size: 20px;
     text-align: center;
     margin-right: 4px;
